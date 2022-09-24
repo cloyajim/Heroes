@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Heroes</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_stats">Stats</string>
+    <string name="hint_biography">Biografia</string>
+    <string name="hint_appearance">Apariencia</string>
+    <string name="hint_Work">Trabajo</string>
+    <string name="hint_connection">Conección</string>
+    <string name="hint_buscar">Buscar</string>
+    <string name="etiqueta_name">Ingresa un nombre</string>
+    <string name="button_text">Buscar</string>
+</resources>
