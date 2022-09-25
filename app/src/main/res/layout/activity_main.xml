@@ -1,17 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Main.MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerHeroList"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/common_padding_default"
+        android:paddingBottom="@dimen/common_padding_large"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/profile_corner_radius_large"
+            app:cardElevation="@dimen/common_padding_min"
+            android:layout_margin="@dimen/common_padding_default">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="@dimen/profile_image_size_large"
+                android:layout_height="@dimen/profile_image_size_large"
+                android:src="@drawable/super_heroe"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/profile_text_size_large"
+            android:textColor="@color/black"
+            android:text="Ingresa un nombre:"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/common_padding_default"
+            android:layout_marginTop="@dimen/common_padding_default"
+            app:startIconDrawable="@drawable/ic_search"
+            android:hint="@string/hint_search">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/common_padding_default"
+        android:paddingLeft="@dimen/common_padding_default"
+        android:paddingRight="@dimen/common_padding_default"
+        android:paddingTop="@dimen/common_padding_default">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="8dp"
+            android:id="@+id/btnSearch"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#281E83"
+            android:text="Continuar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

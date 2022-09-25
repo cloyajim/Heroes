@@ -6,6 +6,8 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface RetrofitServices {
-    @GET("SuperHero")
+    @GET("id")
     fun getHeroList(): Call<MutableList<HeroeResponse>>
+
+
 }
