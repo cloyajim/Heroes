@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.IO).launch {
             val call = getClient().create<RetrofitServices>(RetrofitServices::class.java)
                 .getHeroList()
+
         }
     }
 
