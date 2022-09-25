@@ -6,4 +6,10 @@
     <dimen name="common_padding_min">8dp</dimen>
     <dimen name="profile_image_size_large">256dp</dimen>
     <dimen name="profile_text_size_large">24sp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="margin_min">8dp</dimen>
+    <dimen name="corner_radius_middle">28dp</dimen>
+    <dimen name="layout_large">100dp</dimen>
+    <dimen name="margin_large">192dp</dimen>
+    <dimen name="profile_text_middle">16sp</dimen>
 </resources>

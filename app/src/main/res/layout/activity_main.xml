@@ -28,7 +28,7 @@
                 android:layout_width="@dimen/profile_image_size_large"
                 android:layout_height="@dimen/profile_image_size_large"
                 android:src="@drawable/super_heroe"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
 
         </androidx.cardview.widget.CardView>
 
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/profile_text_size_large"
             android:textColor="@color/black"
-            android:text="Ingresa un nombre:"/>
+            android:text="@string/ingresa_nombre"/>
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -77,7 +77,7 @@
             android:id="@+id/btnSearch"
             android:textColor="@android:color/white"
             app:backgroundTint="#281E83"
-            android:text="Continuar"
+            android:text="@string/btn_continuar"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>

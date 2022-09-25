@@ -10,4 +10,14 @@
     <string name="etiqueta_name">Ingresa un nombre</string>
     <string name="button_text">Buscar</string>
     <string name="hint_search">Buscar</string>
+    <string name="ingresa_nombre">Ingresa un nombre:</string>
+    <string name="btn_continuar">Continuar</string>
+    <string name="tv_name">name</string>
+    <string name="tv_biography">biography</string>
+    <string name="tv_powerstats">powerstats</string>
+    <string name="tv_appearance">appearance</string>
+    <string name="tv_occupation">occupation</string>
+    <string name="tv_realtives">realtives</string>
+    <string name="error">Error</string>
+    <string name="hecho">Ok</string>
 </resources>

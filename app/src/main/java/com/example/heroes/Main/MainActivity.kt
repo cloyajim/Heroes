@@ -1,10 +1,14 @@
 package com.example.heroes.Main
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.heroes.Interfaz.RetrofitServices
 import com.example.heroes.Model.HeroeResponse
+import com.example.heroes.R
 import com.example.heroes.Retrofit.RetrofitClient
 import com.example.heroes.Retrofit.RetrofitClient.getClient
 import com.example.heroes.databinding.ActivityMainBinding
@@ -40,11 +44,11 @@ class MainActivity : AppCompatActivity() {
                 call: Call<MutableList<HeroeResponse>>,
                 response: Response<MutableList<HeroeResponse>>
             ) {
-                Toast.makeText(this@MainActivity,"Error", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity,getString(R.string.error), Toast.LENGTH_LONG).show()
             }
 
             override fun onFailure(call: Call<MutableList<HeroeResponse>>, t: Throwable) {
-                Toast.makeText(this@MainActivity,"Ok", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity,getString(R.string.hecho), Toast.LENGTH_LONG).show()
             }
 
 
@@ -58,7 +62,6 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-
 
 }
 

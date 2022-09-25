@@ -2,40 +2,47 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardElevation="8dp"
-    android:layout_margin="8dp">
+    app:cardElevation="@dimen/card_elevation"
+    android:layout_margin="@dimen/margin_min"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="@dimen/corner_radius_middle"
+    android:elevation="@dimen/card_elevation"
+    app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/blue_sky">
 
 
         <ImageView
             android:id="@+id/imgHero"
             android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_height="@dimen/layout_large"
+            android:layout_marginEnd="@dimen/margin_min"
+            app:srcCompat="@drawable/ic_image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tvName"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.238" />
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="192dp"
-            android:layout_marginLeft="192dp"
-            android:layout_marginTop="16dp"
-            android:text="name"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_min"
+            android:text="@string/tv_name"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textSize="@dimen/profile_text_size_large"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -46,12 +53,11 @@
             android:id="@+id/tvBiog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="196dp"
-            android:layout_marginLeft="196dp"
-            android:layout_marginTop="8dp"
-            android:text="biography"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_min"
+            android:text="@string/tv_biography"
             android:textColor="@android:color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/profile_text_middle"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvName" />
@@ -60,12 +66,11 @@
             android:id="@+id/tvPowerstats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="196dp"
-            android:layout_marginLeft="196dp"
-            android:layout_marginTop="8dp"
-            android:text="powerstats"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_min"
+            android:text="@string/tv_powerstats"
             android:textColor="@android:color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/profile_text_middle"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvBiog" />
@@ -75,11 +80,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="184dp"
-            android:layout_marginLeft="184dp"
             android:layout_marginTop="12dp"
-            android:text="appearance"
+            android:text="@string/tv_appearance"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/profile_text_middle"
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvPowerstats" />
@@ -89,11 +93,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="184dp"
-            android:layout_marginLeft="184dp"
             android:layout_marginTop="12dp"
-            android:text="occupation"
+            android:text="@string/tv_occupation"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/profile_text_middle"
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvAppearance" />
@@ -103,16 +106,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="184dp"
-            android:layout_marginLeft="184dp"
             android:layout_marginTop="12dp"
-            android:text="realtives"
+            android:text="@string/tv_realtives"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/profile_text_middle"
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvOccupation" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
 </androidx.cardview.widget.CardView>
+
+
 
